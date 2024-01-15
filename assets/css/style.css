@@ -1,0 +1,203 @@
+:root {
+    --navy-blue: #1D2D5C;
+    --royal-blue: #134A8E;
+    --red: #E8291C;
+    --white: #ffffff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;  /*Size of header*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--royal-blue);
+    color: var(--white);    
+}
+
+nav {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: var(--navy-blue);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.5;
+    color: var(--red);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    color: black;
+}
+.information {
+    width: 60%;
+    display: inline-block;
+}
+
+.aside {
+    width: 40%;
+    display: inline-block;
+    float: right;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.introduction, .about-me, .my-projects {
+    margin: 20px;
+    padding: 20px;
+    height: 20%;
+    background-color: var(--royal-blue);
+    color: var(--white);
+}
+
+.my-projects .prework-study-guide img {
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+
+/* How to zoom in on an image when hovering code was found from: https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+
+.my-projects .prework-study-guide:hover img {
+    transform: scale(2.5);
+    cursor: pointer;
+}
+
+/* How to zoom in on an image when hovering code was found from: https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+
+
+.my-projects .hsss img {
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+
+/* How to zoom in on an image when hovering code was found from: https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+
+
+.my-projects .hsss:hover img{
+    transform: scale(2.5);
+    cursor: pointer;
+}
+
+/* How to zoom in on an image when hovering code was found from: https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+
+.work-experience {
+    margin: 20px;
+    padding: 20px;
+    height: 20%;
+    float: right;
+    width: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--royal-blue);
+}
+
+.bluejays, .hm {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: var(--royal-blue);
+    color: var(--white); 
+}
+
+.linkedin img {
+    width:30px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.contact .linkedin:hover img{
+    cursor: pointer;
+}
+
+.contact .github:hover img {
+    cursor: pointer;
+}
+
+.github img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+    .information {
+        width: 40%;
+    }
+
+    .aside {
+        width:60%;
+    }
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information {
+        width: 40%;
+    }
+
+    .aside {
+        width:60%;
+    }
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .information {
+        width: 40%;
+    }
+
+    .aside {
+        width:60%;
+    }
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+    }
+}
